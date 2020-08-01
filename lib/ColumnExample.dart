@@ -64,7 +64,6 @@ class _ColumnState extends State<ColumnExample>{
               //设置文字对齐方式
               verticalDirection: VerticalDirection.up,
               children: <Widget>[
-
                 Text(" hello world ", style: TextStyle(fontSize: 30.0,color: Colors.black),),
                 Text(" I am Jack "),
               ],
