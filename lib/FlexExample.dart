@@ -22,6 +22,7 @@ class  _FlexState extends State<FlexExample>
     // TODO: implement build
     return Scaffold(
       appBar: new AppBar(
+
         title: new Text("弹性布局"),
       ),
       body: new Center(
