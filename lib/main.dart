@@ -4,6 +4,8 @@ import 'package:flutterapp/Login.dart';
 import 'package:flutterapp/LoginFormRoute.dart';
 import 'package:flutterapp/SwitchAndCheckBoxTestRoute.dart';
 
+import 'FlexExample.dart';
+
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -55,48 +57,56 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             //Column：垂直方向 Row:水平方向
             new Column(
-              children: <Widget>[
-                RaisedButton(
-                  onPressed:(){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                      return Login();
-                    }));
-                  },
+        children: <Widget>[
+              RaisedButton(
+                onPressed:(){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                    return Login();
+                  }));
+                },
 
 //        tooltip: 'Increment',
-                  child: Text("登录页面"),
-                  textColor: Colors.green,
-                  textTheme: ButtonTextTheme.primary,
-                ),
-                RaisedButton(
-                  onPressed:(){
+                child: Text("登录页面"),
+                textColor: Colors.green,
+                textTheme: ButtonTextTheme.primary,
+              ),
+              RaisedButton(
+                onPressed:(){
 
-                    print("ssssssssssssss");
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                      return SwitchAndCheckBoxTestRoute();
-                    }));
-                  },
-                  child: Text("switch选择示例"),
-                ),
-                RaisedButton(
-                  onPressed:(){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                      return LoginFormRoute();
-                    }));
-                  },
-                  child: Text("登录表单示例"),
-                ),
-                RaisedButton(
-                  onPressed:(){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                      return ColumnExample();
-                    }));
-                  },
-                  child: Text("水平、垂直布局示例"),
-                ),
-                //进度条显示50%，会显示一个半圆
+                  print("ssssssssssssss");
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                    return SwitchAndCheckBoxTestRoute();
+                  }));
+                },
+                child: Text("switch选择示例"),
+              ),
+              RaisedButton(
+                onPressed:(){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                    return LoginFormRoute();
+                  }));
+                },
+                child: Text("登录表单示例"),
+              ),
+              RaisedButton(
+                onPressed:(){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                    return ColumnExample();
+                  }));
+                },
+                child: Text("水平、垂直布局示例"),
+              ),
+          RaisedButton(
+                onPressed:(){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                    return FlexExample();
+                  }));
+                },
+                child: Text("弹性布局（Flex)"),
+              ),
+              //进度条显示50%，会显示一个半圆
 
-              ],
+            ]
             ),
 //            Image.network(
 //              "https://avatars2.githubusercontent.com/u/20411648?s=460&v=4",
